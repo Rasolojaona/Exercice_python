@@ -4,10 +4,10 @@ def compute_cost(x, y, w, b):
 
     total_cost = 0
 
-    for i in range(m):
         y_pred = w * x[i] + b
+    for i in range(m):
         total_cost = (y_pred - y[i])**2 + total_cost
-
+0
     total_cost = (1 / (2 * m)) * total_cost
 
     return total_cost
